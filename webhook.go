@@ -2,23 +2,17 @@
 package main
 
 import (
-//"bytes"
-//"encoding/json"
-//"errors"
+
 "fmt"
-//"io"
-//"io/ioutil"
-//"log"
-//"mime/multipart"
+
 "net/http"
-//"os"
-//"path/filepath"
+
 )
-// This defines a bot
-// Set Debug to true for debugging
+
 func handler(w http.ResponseWriter, r *http.Request) {
     fmt.Fprintf(w, "Say Hi")
 }
+
 func SetWebhook(w http.ResponseWriter, req *http.Request) {
 switch req.Method {
 case "GET":
@@ -35,7 +29,7 @@ return
 }
 }
 
-//return callbackChan, mux
+
 
 
 func main(){
